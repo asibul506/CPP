@@ -9,20 +9,20 @@ int main()
 	double dbl;
 	char ch;
 	bool bol;
-	string fullName;
+	string name, fullName;
 
 
 	cout<<boolalpha;
-
-	cout << "Enter you full : ";
-	cin >> fullName;
-
-	string fuln;
-	cout << "Enter f name " <<endl;
-	getline(cin,fuln)
+	
+	cout << "Enter full name ";
+	getline(cin,fullName);
 
 	cout << "Enter you age: ";
 	cin >> num1;
+
+	cout<<"Enter your nick name (cin) : ";
+	cin>> name;
+	cin.get(); //if we do not use this then cin will catch enter as a character
 
 	cout << "Enter a double value: ";
 	cin >> dbl;
@@ -36,12 +36,14 @@ int main()
 	cout << "Enter a float number: ";
 	cin >> num2;
 
+	cout << "String getline : " << fullName << endl;
+	cout<<"nick name : "<<name<<endl;
 	cout << "Int : " << num1<<endl;
 	cout << "Float : " << num2 << endl;
 	cout << "Double : " << dbl << endl;
 	cout << "Character : " << ch << endl;
 	cout << "Boolean : " << bol << endl;
-	cout << "String cin : " << fullName << endl;
+	
 
 	return 0;
 }
