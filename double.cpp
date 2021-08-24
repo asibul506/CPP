@@ -9,7 +9,6 @@ int main()
     {
         salary=salary+(i*2);
 
-
     }
     cout<<salary<<endl;
 }
